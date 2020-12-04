@@ -3,58 +3,79 @@
 <title>Portfolio | Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans", sans-serif}
-h2 {font-size: 14px;}
-/*.w3-bar-block .w3-bar-item {padding:20px}
-</style>
+tr{cursor:pointer;}
+thead{font-family: 'Rubik', sans-serif;}
+table, .header {font-family: 'PT Serif', serif;font-size:24px;}
+.header{height:40vh;line-height:auto;}
+
+body{padding:5px;}
+/*.hi:hover{background:coral;}*/
+
+td{border:2px solid red;}
+
+.header a:hover{font-style: italic;line-height:18px;}
+
+.contact:hover{cursor:crosshair;}
+
+
+}
+</style> <!--------END STYLE--------->
 <body>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <!--<div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>-->
-    <div class="w3-right w3-padding-16"><a href="/about.html">About</a></div>
-    <div class="w3-left w3-padding-16"><a href="index.html"> ---</a></div>
-  </div>
-</div>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<!---MAIN CONTENT INCLUDING HEADER--->
+  <head>
+  <meta charset="UTF-8">
+  <title>collapsable effect using materialize css</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
 
+</head>  
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-left">  
-    <h3>I am a visual designer specializing in branding, UX/UI, and art direction.</h3><br>
-  </div> 
-  
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-          <a href="#"><img src="https://user-images.githubusercontent.com/65783604/82709333-fe384b00-9c45-11ea-905e-f4f55b02a05e.png" alt="print" style="width:100%"></a>
-      <p>Project 1</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <a href="#"><img src="https://user-images.githubusercontent.com/65783604/82709545-70a92b00-9c46-11ea-8fd7-efaf20524077.png" alt="app" style="width:100%"></a>
-      <p>Project 2</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <a href="#"><img src="https://user-images.githubusercontent.com/65783604/82709333-fe384b00-9c45-11ea-905e-f4f55b02a05e.png" alt="print" style="width:100%"</a>
-      <p>Proj 3</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <a href="#"><img src="https://user-images.githubusercontent.com/65783604/82709333-fe384b00-9c45-11ea-905e-f4f55b02a05e.png" alt="print" style="width:100%"></a>
-      <p>Motion Graphics</p>
-     
-    </div>
-  </div>
-  
+<body>
+  <div class="header"><a href="" class="contact">Name
+    <br>Former <a href="">designer</a> turned <a href="">programmer</a>.<br>B.A. in Design from the.</div>
 
+<table class="highlight responsive-table">
+        <thead>
+          <tr>
+              <th>Title</th>
+              <th>Kind</th>
+              <th>Client</th>
+              <th>Year</th> 
+              <th>Thumbnail</th>
+          </tr>
+        </thead>
+
+        <tbody>
+         <tr data-href="https://pexels.com" target="_blank">
+            <td>Seasonables.</td>
+            <td>HTML, CSS, jQuery</td>
+            <td>(Personal Work)</td>
+            <td>2020</td>
+            <td><img src="https://images.pexels.com/photos/5633410/pexels-photo-5633410.jpeg?auto=compress&cs=tinysrgb&h=100&w=1260"></td>
+           </tr>
+          <tr data-href="https://pexels.com" target="_blank">
+            <td>Business name</td>
+            <td>Web Design, Logo</td>
+            <td>(Personal Work)</td>
+            <td>2020</td>
+            <td><img src="https://images.pexels.com/photos/5633410/pexels-photo-5633410.jpeg?auto=compress&cs=tinysrgb&h=100&w=1260"></td>
+          </tr>
+          <tr data-href="https://pexels.com" target="_blank">
+            <td>JavaScript Games</td>
+            <td>HTML, CSS, JavaScript</td>
+            <td>(Personal Work)</td>
+            <td>2020</td>
+            <td><img src="https://images.pexels.com/photos/5500480/pexels-photo-5500480.jpeg?auto=compress&cs=tinysrgb&h=100&w=1260"></td>
+            </tr>
+        </tbody>
+      </table>
+  
+</body>
   
   <!-- Footer -->
   <footer class="w3-row-padding w3-padding-32">
