@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio | Home</title>
+ <head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+  <style>
+    *{
+  margin:0;
+  padding:0;
+}
+
+body{
+  position:relative;min-height:100vh;
+}
+.grid {
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap:10px;
+  row-gap:10px;
+  padding-left:2rem;
+  padding-right:2rem;
+  padding-top:2.5rem;
+  padding-bottom:5.5rem;
+  min-height:100vh;
+} /*auto calls column to fit the size of content*/
+
+.full-img{
+  background-image: url("https://64.media.tumblr.com/cb5ad5f8b243d1a000ad2e702d5a6814/8e5e7d2604b8c5bb-14/s1280x1920/a9bc9cc93099ccc14a5d4603c84f756715d2da85.gifv");
+  background-size:cover;
+  width:100%;
+}
+.full-img3{
+  background-image:url("https://64.media.tumblr.com/c076516756b8c38f44f973193c73643a/0b65247ecee538f3-0b/s500x750/94d9d2c3cf74cc7c64badee80a7704a6a3aced77.png");
+  background-size:cover;
+  width:100%;
+}
+.grid div:nth-child(even){
+  background:khaki;
+}
+.grid div:nth-child(odd){
+  background:co/ral;
+}
+
+@media screen and (max-width:575px){
+  .grid {
+  display: grid;
+ grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+}
+
+#logo{
+  margin-top:2.5rem;
+  width:;
+  height:;
+  display:flex;justify-content:center;
+}
+img{width:100px;height:100px;}
+
+nav{
+  margin-top:2.5rem;
+  width:;
+  height:;
+  display:flex;justify-content:center;}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/*ul {
+  list-style: square inside url("sqpurple.gif");
+} if you want cute gifs instead of bulletpoints*/
+li{float:left;}
+li a{
+  display:block;
+  padding:8px;
+}
+
+footer{
+  width:100%;
+  height:2.5rem;
+  position:absolute;
+  bottom:0;
+  display:flex;
+  justify-content:center;
+}
+footer p{
+  color:#799;
+  font-family:monospace;
+}
+  </style><!--------END STYLE--------->
+  
+  
+<body>
+<div id="logo"><img src="https://64.media.tumblr.com/cb5ad5f8b243d1a000ad2e702d5a6814/8e5e7d2604b8c5bb-14/s1280x1920/a9bc9cc93099ccc14a5d4603c84f756715d2da85.gifv"></div>
+
+<nav>
+  <ul>
+    <li><a href="#">info</a></li>
+    <li><a href="#">animation</a>
+    <li><a href="#">illustration</a></li>
+    <li><a href="#">reel</a></li>
+    </li>
+  </ul>
+</nav>
+
+
+<div class="grid">
+  <div class="full-img"></div>
+  <div class="full-img">2</div>
+  <div class="full-img3">3</div>
+  <div class="full-img">4</div>
+  <div class="full-img">5</div>
+  <div class="full-img">3</div>
+  <div class="full-img">5</div>
+  <div class="full-img">3</div>
+  <div class="full-img">5</div>
+ 
+</div>
+
+
+
+
+
+<footer><p>I also made this website!</p></footer>
+</body>
+
+</html>
