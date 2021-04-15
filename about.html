@@ -1,76 +1,127 @@
 <!DOCTYPE html>
 <html>
-<title>Portfolio | About</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans", sans-serif}
-h2 {font-size: 14px;}
-/*.w3-bar-block .w3-bar-item {padding:20px}
-</style>
+<title>Portfolio | Home</title>
+ <head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+  <style>
+  *{
+  margin:0;
+  padding:0;
+}
+
+body{
+  position:relative;min-height:100vh;
+}
+.grid {
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap:10px;
+  row-gap:10px;
+  padding-left:2rem;
+  padding-right:2rem;
+  padding-top:2.5rem;
+  padding-bottom:5.5rem;
+  min-height:100vh;
+} /*auto calls column to fit the size of content*/
+
+.full-img{
+  background-image: url("https://64.media.tumblr.com/cb5ad5f8b243d1a000ad2e702d5a6814/8e5e7d2604b8c5bb-14/s1280x1920/a9bc9cc93099ccc14a5d4603c84f756715d2da85.gifv");
+  background-size:cover;
+  width:100%;
+}
+.grid div:nth-child(even){
+  background:khaki;
+}
+.grid div:nth-child(odd){
+  
+}
+
+@media screen and (max-width:575px){
+  .grid {
+  display: grid;
+ grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+}
+
+#logo{
+  margin-top:2.5rem;
+  width:;
+  height:;
+  display:flex;justify-content:center;
+}
+img{width:100px;height:100px;}
+
+nav{
+  margin-top:2.5rem;
+  width:;
+  height:;
+  display:flex;justify-content:center;}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/*ul {
+  list-style: square inside url("sqpurple.gif");
+} if you want cute gifs instead of bulletpoints*/
+li{float:left;}
+li a{
+  display:block;
+  padding:8px;
+}
+
+footer{
+  width:100%;
+  height:2.5rem;
+  position:absolute;
+  bottom:0;
+  display:flex;
+  justify-content:center;
+}
+footer p{
+  color:#799;
+  font-family:monospace;
+}
+  </style><!--------END STYLE--------->
+  
+  
 <body>
+<div id="logo"><img src="https://64.media.tumblr.com/cb5ad5f8b243d1a000ad2e702d5a6814/8e5e7d2604b8c5bb-14/s1280x1920/a9bc9cc93099ccc14a5d4603c84f756715d2da85.gifv"></div>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <!--<div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>-->
-    <div class="w3-right w3-padding-16"><a href="/about.html">About</a></div>
-    <div class="w3-left w3-padding-16"><a href="index.html"> ---</a></div>
-  </div>
-</div>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-left">  
-    <h3>About description.</h3><br>
-  </div> 
-  
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-          <a href="#"><img src="https://user-images.githubusercontent.com/65783604/82709333-fe384b00-9c45-11ea-905e-f4f55b02a05e.png" alt="print" style="width:100%"></a>
-      <p>Project 1</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <a href="#"><img src="https://user-images.githubusercontent.com/65783604/82709545-70a92b00-9c46-11ea-8fd7-efaf20524077.png" alt="app" style="width:100%"></a>
-      <p>Project 2</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <a href="#"><img src="https://66.media.tumblr.com/5c0d92713a82f6a391a684eee10a4f6b/tumblr_pbs18pAW4b1xq9k5vo1_1280.png" alt="print" style="width:100%"</a>
-      <p>Social Media</p>
-      
-    </div>
-    <div class="w3-quarter">
-      <a href="#"><img src="https://66.media.tumblr.com/e1f97637851a8f656df5f4c8ed26bda0/a41021a271be0db6-8d/s500x750/1a2f1f1419114a8eb462ae25ebc70ca8f6e42030.gifv" alt="print" style="width:100%"></a>
-      <p>Motion Graphics</p>
-     
-    </div>
-  </div>
-  
-
-  
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>——</h3>
-      <p>Currently looking for freelance, internship, or full time opportunities.</p>
-    </div>
-    <div class="w3-third w3-right">
-    <p style="font-weight:bold;">Say Hello 👋 </p>
-    </div>
+<nav>
+  <ul>
+    <li><a href="#">info</a></li>
+    <li><a href="#">animation</a>
+    <li><a href="#">illustration</a></li>
+    <li><a href="#">reel</a></li>
+    </li>
+  </ul>
+</nav>
 
 
-  </footer>
-
-<!-- End page content -->
+<div class="grid">
+  <div class="full-img"></div>
+  <div class="full-img">2</div>
+  <div class="full-img">3</div>
+  <div class="full-img">4</div>
+  <div class="full-img">5</div>
+  <div class="full-img">3</div>
+  <div class="full-img">5</div>
+  <div class="full-img">3</div>
+  <div class="full-img">5</div>
+ 
 </div>
 
+
+
+
+
+<footer><p>I also made this website!</p></footer>
 </body>
+
 </html>
