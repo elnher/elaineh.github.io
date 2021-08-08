@@ -1,126 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<title>Portfolio | Info</title>
- <head>
-  <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-</head> 
-  <style>
-   *{
-  margin:0;
-  padding:0;
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<!--Font-->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<style>
+	  
+      /********MEDIA QUERIES// RESPONSIVE*********/
+		@media screen and (max-width:800px){
+			
+			.position{display:none;}
+			#projectRow td{
+				width:100vw;
+			}
+		}
+		
+		
+	/******/
+	html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    transition: all 200ms;
+
+    scroll-behavior: smooth;
+
+    transition: all 200ms;
+    will-change: background;
+		
+	font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #020202;
+}
+	/**HEADER**/
+#header {
+	padding: 2% 6%; 
+    border-bottom: solid 0.2px #E5E5E5;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-body{
-  position:relative;min-height:100vh;
+#header .left {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 50%;
 }
-.grid {
-  display: grid;
- grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto 1fr 1fr;
-  column-gap:10px;
-  row-gap:10px;
-  padding-left:10rem;
-  padding-right:10rem;
-  padding-top:2.5rem;
-  padding-bottom:5.5rem;
-  min-height:100vh;
-} /*auto calls column to fit the size of content*/
-
-.full-img{display:flex; justify-content:center;}
-.full-img img{height:100%; width:70%;}
-.grid div:nth-child(even){
-  background:khaki;
-}
-.grid div:nth-child(odd){
-  background:coral;
+#header .position {
+    width: 30%;
 }
 
-@media screen and (max-width:775px){
-  .grid {
-  display: grid;
- grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-left:0;
-  padding-right:0;
-    width:100%;
+		/**********FONTS**********/
+		b {
+    		font-weight: 400;
+		}
+
+		a {
+		text-decoration: none;
+		color: #020202;
+		}
+		
+		a:hover {
+		opacity: 30%;
+		}
+		
+		
+		
+		
+		/***ROWS OF PROJECTS****/
+		#projectRow {
+    	padding: 2% 6%; 
+   		border-bottom: solid 1px #E5E5E5;
 }
-  .paragraph{ text-align:center; padding:0; margin:0;}
+		.floatL{
+			display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 50%; 
+		}
+		.sideBlank{
+			width:10%;
+		}
+		
+		
+		
+		
+	/**********FOOTER**********/
+#footer {
+    margin-top: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.paragraph{ text-align:center; padding:2.5rem 5rem;}
+#footer.index {
+    margin-top: 0%;
+}	
+#footer .left {
+	padding: 2% 6%; 
 
-#logo{
-  margin-top:2.5rem;
-  width:;
-  height:;
-  display:flex;justify-content:center;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 40%;
 }
-img{width:100px;height:100px;}
+		#media {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 
-nav{
-  margin-top:2.5rem;
-  width:;
-  height:;
-  display:flex;justify-content:center;}
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-/*ul {
-  list-style: square inside url("sqpurple.gif");
-} if you want cute gifs instead of bulletpoints*/
-li{float:left;}
-li a{
-  display:block;
-  padding:8px;
-}
+		width: 40%;
+		}
+		
+		
 
-footer{
-  width:100%;
-  height:2.5rem;
-  position:absolute;
-  bottom:0;
-  display:flex;
-  justify-content:center;
-}
-footer p{
-  color:#799;
-  font-family:monospace;
-}
-   
-  </style><!--------END STYLE--------->
-  
-  
+</style>
+</head>
+
 <body>
-<div id="logo"><a href="https://elnher.github.io/work.html"><img src="https://64.media.tumblr.com/cb5ad5f8b243d1a000ad2e702d5a6814/8e5e7d2604b8c5bb-14/s1280x1920/a9bc9cc93099ccc14a5d4603c84f756715d2da85.gifv"></a></div>
+	<!--HEADER-->
+        <div id="header">
+            <div class="left">
+                <div class="intro">
+                    Elaine Hernandez<br>
+                    Visual Designer and Illustrator, based in Dallas, Texas.
+                </div>
 
-<nav>
-  <ul>
-    <li><a href="https://elnher.github.io/info.html">info</a></li>
-    <li><a href="https://elnher.github.io/work.html">animation</a>
-    <li><a href="https://elnher.github.io/work.html">illustration</a></li>
-    <li><a href="https://elnher.github.io/work.html">reel</a></li>
-    </li>
-  </ul>
-</nav>
+                <div class="position">Currently working on emails at <a href="https://thredup.com/" target="_blank">thredUP.</a></div>
+            </div>
+			
+			
+            <div class="nav">
+                <div class="link "><a href="index.html">Work</a></div>
+                <div class="link"><a href="#about">About</a></div>
+            </div>
+		</div><!-- \\END HEADER--->
+	
+	
+	
+	<div id="projectRow">
+	<!---TABLE GRID---->
+	
+	
+	<!----->
+		<table >
+		<tr ><!---ROW 3--->
+			<td>
+			<table>
+				<tr class="floatL">
+					<td  width="0"><h3 class="imgTxt">About the Designer</h3><p class="pImgTxt">Hi there!
 
+I'm a designer based in Dallas, Texas. I love solving creative and technical problems to make experiences better and performace higher. I have previously worked at a science museum as a designer and at a major online resale store as an email marketer/developer. I also freelance my motion design skills for short to long form videos.
 
-<div class="grid">
-  <div class="full-img"><img src="https://64.media.tumblr.com/4f36036763ea7f9474dbdf59d603a993/4c266d959f48a4ae-54/s1280x1920/42769feac181b16ed2087816282c1aa3f64802de.png"></div>
-  <div class="paragraph"><h1>Hello!</h1><p>elaine is a creative based in Dallas, Texas. Her illustrations express a moment of calmness in a sometimes chaotic world. She likes to explore different styles of illustration and animation. She enjoys cooking a good meal, listening to Ologies, and exploring the great outdoors.<br> Let's work together: email</p></div>
-  <div class="">extra</div>
-  <div class="">footer</div>
- 
-</div>
+I am actively looking for new full-time visual design opportunites and freelance work.</p></td>
+					<td>
+    				<img src="https://64.media.tumblr.com/706114430f8a1f4555c95d8e2d588064/ea1347c88d50b771-61/s1280x1920/3ebeff1a5a5d46eba2d47ff529858dd8b585d8ab.png" width="400" />
+					</td>
+				</tr></table>
+			</td>
+			
+			<td class="sideBlank"></td>
+			<td>
+			<table>
+				<tr class="floatL">
+					<td  width="0"><h3 class="imgTxt">Second section</h3><p class="pImgTxt">Vector, Editorial, Character</p></td>
+					<td>
+    				<img src="https://64.media.tumblr.com/706114430f8a1f4555c95d8e2d588064/ea1347c88d50b771-61/s1280x1920/3ebeff1a5a5d46eba2d47ff529858dd8b585d8ab.png" width="400" />
+					</td>
+				</tr></table>
+			</td>
+			
+			
+		</tr></table>
+	
 
+	</div>
+	
+	
+	
+	
+	
+	<!------------->
+	
+	<!--FOOTER-->
+        <div id="footer" class="index">
+            <div class="left">
+                <div class="intro">
+                    <div class="title">Contact</div>
+                    <a href="mailto:eln.hrndz@gmail.com" target="_blank">eln.hrndz(at)gmail.com</a>
+                </div>
 
+                <div class="sideBlank"></div>
 
+                
+                <div class="sideBlank"></div>
 
-
-<footer><p>I also made this website!</p></footer>
+                <div class="position">
+                    <div class="title">Social</div>
+                    <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a><br>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </div>
+            </div>
+            
+            <!---<div id="copyright">© Made by Elaine Hernandez.</div>--->
+        </div>
 </body>
-
 </html>
