@@ -1,104 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<title>Portfolio | Home</title>
- <head>
-  <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>collapsable effect using materialize css</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<!--Font-->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-</head> 
-  <style>
-tr{cursor:pointer;}
-thead{font-family: 'Rubik', sans-serif;}
-table, .header {font-family: 'PT Serif', serif;font-size:24px;}
-.header{height:40vh;line-height:auto;font-size:;}
-.description, p{font-size:18px;}
-body{padding:5px;}
+	<style>
+	  
+      /********MEDIA QUERIES// RESPONSIVE*********/
+		@media screen and (max-width:800px){
+			
+			.position{display:none;}
+			#projectRow td{
+				width:100vw;
+			}
+		}
+		
+		
+	/******/
+	html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    transition: all 200ms;
 
-/*td{border:2px solid red;}*/
+    scroll-behavior: smooth;
 
-.header a:hover{font-style: italic;line-height:18px;}
-
-.contact:hover{cursor:crosshair;}
-
-
+    transition: all 200ms;
+    will-change: background;
+		
+	font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #020202;
 }
-</style> <!--------END STYLE--------->
+	/**HEADER**/
+#header {
+	padding: 2% 6%; 
+    border-bottom: solid 0.2px #E5E5E5;
 
-<!---MAIN CONTENT INCLUDING HEADER--->
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header .left {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 50%;
+}
+#header .position {
+    width: 30%;
+}
+
+		/**********FONTS**********/
+		b {
+    		font-weight: 400;
+		}
+
+		a {
+		text-decoration: none;
+		color: #020202;
+		}
+		
+		a:hover {
+		opacity: 30%;
+		}
+		
+		
+		
+		
+		/***ROWS OF PROJECTS****/
+		#projectRow {
+    	padding: 2% 6%; 
+   		border-bottom: solid 1px #E5E5E5;
+}
+		.floatL{
+			display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 50%; 
+		}
+		.sideBlank{
+			width:10%;
+		}
+		
+		
+		
+		
+	/**********FOOTER**********/
+#footer {
+    margin-top: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer.index {
+    margin-top: 0%;
+}	
+#footer .left {
+	padding: 2% 6%; 
+
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 40%;
+}
+		#media {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		width: 40%;
+		}
+		
+		
+
+</style>
+</head>
 
 <body>
-  <div class="header"><a href="" class="contact">Name
-    <br><div class="description">Former <a href="">designer</a> turned <a href="">programmer</a>.<br>B.A. in Design from the.</div></div>
+	<!--HEADER-->
+        <div id="header">
+            <div class="left">
+                <div class="intro">
+                    Elaine Hernandez<br>
+                    Visual Designer and Illustrator, based in Dallas, Texas.
+                </div>
 
-<table class="highlight responsive-table">
-<!--    <thead>
-          <tr>
-              <th>Title</th>
-              <th>Kind</th>
-              <th>Client</th>
-              <th>Year</th> 
-              <th></th>
-          </tr>
-        </thead>
----->
+                <div class="position">Currently working on emails at <a href="https://thredup.com/" target="_blank">thredUP.</a></div>
+            </div>
+			
+			
+            <div class="nav">
+                <div class="link "><a href="index.html">Work</a></div>
+                <div class="link"><a href="#about">About</a></div>
+            </div>
+		</div><!-- \\END HEADER--->
+	
+	
+	
+	<div id="projectRow">
+	<!---TABLE GRID---->
+	
+	
+	<!----->
+		<table >
+		<tr ><!---ROW 3--->
+			<td>
+			<table>
+				<tr class="floatL">
+					<td  width="0"><h3 class="imgTxt">Illustration</h3><p class="pImgTxt">Vector, Editorial, Character</p></td>
+					<td>
+    				<img src="https://64.media.tumblr.com/706114430f8a1f4555c95d8e2d588064/ea1347c88d50b771-61/s1280x1920/3ebeff1a5a5d46eba2d47ff529858dd8b585d8ab.png" width="400" />
+					</td>
+				</tr></table>
+			</td>
+			
+			<td class="sideBlank"></td>
+			<td>
+			<table>
+				<tr class="floatL">
+					<td  width="0"><h3 class="imgTxt">Illustration</h3><p class="pImgTxt">Vector, Editorial, Character</p></td>
+					<td>
+    				<img src="https://64.media.tumblr.com/706114430f8a1f4555c95d8e2d588064/ea1347c88d50b771-61/s1280x1920/3ebeff1a5a5d46eba2d47ff529858dd8b585d8ab.png" width="400" />
+					</td>
+				</tr></table>
+			</td>
+			
+			
+		</tr></table>
+	
+	<table >
+		<tr ><!---ROW 4--->
+			<td>
+			<table>
+				<tr class="floatL">
+					<td width="0"><h3 class="imgTxt">Illustration</h3><p class="pImgTxt">Vector, Editorial, Character</p></td>
+					<td>
+    				<img src="https://64.media.tumblr.com/706114430f8a1f4555c95d8e2d588064/ea1347c88d50b771-61/s1280x1920/3ebeff1a5a5d46eba2d47ff529858dd8b585d8ab.png" width="400" />
+					</td>
+				</tr></table>
+			</td>
+			
+			
+			<td class="sideBlank"></td>
+			<td>
+			<table>
+				<tr class="floatL">
+					<td  width="0"><h3 class="imgTxt">Illustration</h3><p class="pImgTxt">Vector, Editorial, Character</p></td>
+					<td>
+    				<img src="https://64.media.tumblr.com/706114430f8a1f4555c95d8e2d588064/ea1347c88d50b771-61/s1280x1920/3ebeff1a5a5d46eba2d47ff529858dd8b585d8ab.png" width="400" />
+					</td>
+				</tr></table>
+			</td>
+		</tr></table>
+	
+	</div>
+	
+	
+	
+	
+	
+	<!------------->
+	
+	<!--FOOTER-->
+        <div id="footer" class="index">
+            <div class="left">
+                <div class="intro">
+                    <div class="title">Contact</div>
+                    <a href="mailto:eln.hrndz@gmail.com" target="_blank">eln.hrndz(at)gmail.com</a>
+                </div>
 
-        <tbody>
-         <tr data-href="https://codepen.io/exh/pen/BaLJZmd" target="_blank">
-            <td>Survey Form</td>
-            <td>HTML, CSS, Bootstrap</td>
-            <td>(Personal Work)</td>
-            <td>2020</td>
-            <td><img src="https://images.pexels.com/photos/5633410/pexels-photo-5633410.jpeg?auto=compress&cs=tinysrgb&h=100&w=1260"></td>
-           </tr>
-          <tr data-href="https://codepen.io/elaineh/pen/gOwGBGr" target="_blank">
-            <td>Photography Portfolio Theme</td>
-            <td>HTML, CSS</td>
-            <td>(Personal Work)</td>
-            <td>2020</td>
-            <td><img src="https://images.pexels.com/photos/5633410/pexels-photo-5633410.jpeg?auto=compress&cs=tinysrgb&h=100&w=1260"></td>
-          </tr>
-          <tr data-href="https://codepen.io/elaineh/pen/MWjaKao" target="_blank">
-            <td>JavaScript Self Desctruct</td>
-            <td>HTML, CSS, JavaScript</td>
-            <td>(Personal Work)</td>
-            <td>2020</td>
-            <td><img src="https://images.pexels.com/photos/5500480/pexels-photo-5500480.jpeg?auto=compress&cs=tinysrgb&h=100&w=1260"></td>
-            </tr>
-        </tbody>
-      </table>
-  <script>
-    document.addEventListener("DOMContentLoaded", ()=>{
-  const rows = document.querySelectorAll("tr[data-href]");
-  
-  rows.forEach(row =>{
-    row.addEventListener("click", () => {
-      window.location.href=row.dataset.href;
-    });
-  });
-});
-    </script>
+                <div class="sideBlank"></div>
 
-  
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>——</h3>
-      <p>Currently looking for freelance, internship, or full time opportunities.</p>
-    </div>
-    <div class="w3-third w3-right">
-    <p style="font-weight:bold;">Say Hello 👋 </p>
-    </div>
+                
+                <div class="sideBlank"></div>
 
-
-  </footer>
-</body>
-<!-- End page content -->
-</div>
-
+                <div class="position">
+                    <div class="title">Social</div>
+                    <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a><br>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </div>
+            </div>
+            
+            <!---<div id="copyright">© Made by Elaine Hernandez.</div>--->
+        </div>
 </body>
 </html>
