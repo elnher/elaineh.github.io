@@ -5,233 +5,320 @@
 <title>Untitled Document</title>
 	<!--Font-->
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
 	<style>
-	  
-      /********MEDIA QUERIES// RESPONSIVE*********/
-		@media screen and (max-width:800px){
-			
-			.position{display:none;}
-			#projectRow td{
-				width:100vw;
-			}
+		
+	/* -- DEFAULTS -- */
+
+/* -- DEFAULTS -- */
+		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+		body{
+			margin:0;
+			padding:0;
 		}
 		
-		
-	/******/
-	html, body {
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    transition: all 200ms;
-
-    scroll-behavior: smooth;
-
-    transition: all 200ms;
-    will-change: background;
-		
-	font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 1.8;
-    color: #020202;
-}
-	/**HEADER**/
-#header {
-	padding: 2% 6%; 
-    border-bottom: solid 0.2px #E5E5E5;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+div, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-#header .left {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    width: 50%;
-}
-#header .position {
-    width: 30%;
+/* -- FLUID GRID STYLES -- */
+		.gridContainer{
+			height: 100%;
+			padding:10%;
+		}
+#Grid{
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
 }
 
-		/**********FONTS**********/
-		b {
-    		font-weight: 400;
-		}
-
-		a {
-		text-decoration: none;
-		color: #020202;
-		}
-		
-		a:hover {
-		opacity: 30%;
-		}
-		
-		
-		
-		
-		/***ROWS OF PROJECTS****/
-		#projectRow {
-    	padding: 2% 6%; 
-   		border-bottom: solid 1px #E5E5E5;
+#Grid li{
+  display: inline-block;
+  background: none;
+  width: 23%;
+  padding-top: 3%; /* Used instead of height to give elements fluid, width-based height */
+  margin-bottom: 2.5%;
+	padding-right:2.1%;
 }
-		.floatL{
-			display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    width: 50%; 
-		}
-		.sideBlank{
-			width:10%;
+		#Grid img{
+			width:100%;
 		}
 		
-		
-		
-		
-	/**********FOOTER**********/
-#footer {
-    margin-top: 10%;
+		.header{
+			padding:10% 10% 0% 10%; 
+  background:#f8f8f8;
+			height:100%;
+			 background: ;/* linear-gradient(-45deg, #EDF6BD, #FFDF75);*/
+    /*background-size: 400% 400%;
+    animation: gradient 15s ease infinite !important;*/
+  color:#002034 !important; 
+		}		
+		div .header{
+			padding-bottom:10%;
+		}
+		.header h1{
+			color:black;
+			width:50%;
+			padding-top:20px;
+			font-size:30px;
+			font-family:inter;
+			letter-spacing:.1em;
+text-align:left;
+		}
+		.header p{
+			color:black;
+			width:50%;
+			font-family:inter;
+			padding-top: 20px;
+		}
+	
+		/******************************/
+/* 3 COL */
+
+@media (max-width : 1379px ){
+  #Grid li{
+    width: 31%;
+    padding-top: 1%;
+    margin-bottom: 3%;
+  }
+	#Grid img{
+		width:100%;
+	}
+	.last{
+		padding-left:.5%;
+	}
+	#imageSplash{
+		height:60vh;}
+}
+/* 2 COL */
+
+@media (max-width: 600px){
+  #Grid li{
+    width: 48%;
     padding-top: 4%;
-    padding-bottom: 4%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: 4%;
+	  padding-right:0;
+  }
+	#Grid img{
+		width:100%;
+	}
+	.last{
+		padding-left:3.5%;
+	}
+	.header h1{
+		width:100%;
+	}
+	.header p{
+		width:100%;
+	}
+	#imageSplash{
+		height:40vh;}
 }
 
-#footer.index {
-    margin-top: 0%;
-}	
-#footer .left {
-	padding: 2% 6%; 
+/* SINGLE COL */
 
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    width: 40%;
-}
-		#media {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-
-		width: 40%;
+@media (max-width: 400px){
+  #Grid li{
+    width: 100%;
+    padding-top: 10%;
+    margin-bottom: 5%;
+  }
+	#Grid img{
+		width:100%;
+	}
+	.last{
+		padding-left:0;
+	}
+	.header h1{
+		width:100%;
+			font-size:25px;
+			font-family:inter;
+			letter-spacing:.1em;
+text-align:left;
 		}
+	.header p{
+		width:100%;
+	}
+	
+  #about h2{
+	  width:60%;
+    font-family: bebas neue;
+    font-size:20px;
+        letter-spacing:.1em;
+      line-height:1.6em;
+	  padding-bottom:40px;
+  }
+  #about p{
+    width:55vw;
+    font-family: Lato;
+    font-size: 12px;
+    letter-spacing: .1em;
+    line-height:2em;
+  }
+	nav ul{
+		padding: 0px 10px;
+	}
+	#imageSplash{
+		height:40vh;
+	}
+	
+	.floatingLogo img{
+			position:absolute; left:0;
+			width:200px;
+		}
+}
+	
+		@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 		
 		
-
-</style>
+		#imageSplash{
+  /*height:40vh;*/
+  background: url('https://64.media.tumblr.com/f714e79c1dc918530aee3c2dde8fb10b/53ea8a40eaaa2e8e-fe/s1280x1920/ed5d3c9d93fa880c6ca4100c934ca3e66faaa945.jpg');
+   background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center; 
+			
+}
+		
+		
+		/*************/
+		#about{
+  padding: 30vh 0px 30vh 20vw;
+  background:#f8f8f8;
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+		}
+  #about h2{
+	  width:60%;
+    font-family: bebas neue;
+    font-size:35px;
+        letter-spacing:.2em;
+      line-height:1.6em;
+	  padding-bottom:40px;
+  }
+  #about p{
+    width:55vw;
+    font-family: Lato;
+    font-size: 16px;
+    letter-spacing: .1em;
+    line-height:2em;
+  }
+		nav{
+			background:#F8F8F8;
+			padding-top:2%;
+		}
+	nav ul{
+		font-family:inter;
+    display:flex;
+    flex-direction:row;
+  justify-content:space-between;
+    list-style-type:none;
+    align-items: center; 
+		padding: 0px 120px;
+    /***width:100%;***/
+   }
+	 nav li{
+    font-family:bebas neue !important;
+    font-size:20px;
+    
+  }
+		
+  .active{color:darkslategray !important;}
+		
+  a{
+    text-decoration:none;
+    color: inherit !important;   }
+  a:hover{
+      color:slategray !important;
+    cursor:pointer;
+    }
+		.floatingLogo{
+			position:absolute; left:0;
+			width:500px;
+		}
+	</style>
 </head>
 
 <body>
-	<!--HEADER-->
-        <div id="header">
-            <div class="left">
-                <div class="intro">
-                    Elaine Hernandez<br>
-                    Visual Designer and Illustrator, based in Dallas, Texas.
-                </div>
-
-                <div class="position">Currently working on emails at <a href="https://thredup.com/" target="_blank">thredUP.</a></div>
-            </div>
-			
-			
-            <div class="nav">
-                <div class="link "><a href="index.html">Work</a></div>
-                <div class="link"><a href="#about">About</a></div>
-            </div>
-		</div><!-- \\END HEADER--->
+	
+	<!--- NAVIGATION BAR ----->
+	<!---START NAV BAR---->
+	<nav>
+  <ul>
+    <li class="active"><a href="#about">About the Designer</a></li>
+    <li><a href="#Grid">See Some Work</a></li>
+  </ul>
+</nav>
+	<!-----END NAV BAR---->
+	
+	<!-- FLUID GRID -->
+<div class="container">
+	<div class="header">
+		<img src="https://64.media.tumblr.com/497d4b0ddb3d985b78bc8610fdd88f86/46478cfda2130d8b-b4/s1280x1920/f51169c3d7b70c128650198d556ec5f74e32fcde.png" width="65"/>
+		<h1>Elaine is a digital designer &amp; illustrator based in Dallas, Texas.</h1>
+		<p>She is actively looking for new full-time visual design opportunites and freelance work
+— WFH / open to relocating</p>
+		
+		
+	</div>
+	<!-----START NEW WORK------->
+	<section id="imageSplash">
+ 
+</section>
 	
 	
 	
-	<div id="projectRow">
-	<!---TABLE GRID---->
-	
-	
-	<!----->
-		<table >
-		<tr ><!---ROW 3--->
-			<td>
-			<table>
-				<tr class="floatL">
-					<td  width="0"><h3 class="imgTxt">Storm Farms Logo</h3><p class="pImgTxt">–</p></td>
-					<td>
-    				<img src="https://64.media.tumblr.com/ce965c6b31b6c659dee8b360f16c6584/a9177bc63d22d3df-68/s1280x1920/cf654180238aa3214293fa961b20860692206b6a.png" width="400" />
-					</td>
-				</tr></table>
-			</td>
-			
-			<td class="sideBlank"></td>
-			<td>
-			<table>
-				<tr class="floatL">
-					<!----<td  width="0"><h3 class="imgTxt">Illustration</h3><p class="pImgTxt">Vector, Editorial, Character</p></td>--->
-					<td>
-    				<img src="https://64.media.tumblr.com/3d8d861cd920296b893707398ebbd05d/a9177bc63d22d3df-49/s1280x1920/39d6c0b53963d085b8bf23907b0d963d90e1f4fe.png" width="400" />
-					</td>
-				</tr></table>
-			</td>
-			
-			
-		</tr></table>
-	
-	<table >
-		<tr ><!---ROW 4--->
-			<td>
-			<table>
-				<tr class="floatL">
-					<!----<td width="0"><h3 class="imgTxt">Logos</h3><p class="pImgTxt">Branding, Logo</p></td>---->
-					<td>
-    				<img src="https://64.media.tumblr.com/e99641f01e42eda353a81c1b4961e310/a9177bc63d22d3df-d2/s1280x1920/52b32ce9455dc83e56b534d46ef783b16cca84b2.png" width="400" />
-					</td>
-				</tr></table>
-			</td>
-			
-			
-			<td class="sideBlank"></td>
-			<td>
-			<table>
-				<tr class="floatL">
-					<!---<td  width="0"><h3 class="imgTxt">MISC</h3><p class="pImgTxt">–</p></td>---->
-					<td>
-    				<img src="https://64.media.tumblr.com/0882aafae28a5f23d0948d0f971409d2/a9177bc63d22d3df-97/s1280x1920/6c4559d63b9bea530fe7730396cda167b30fadd3.jpg" width="400" />
-					</td>
-				</tr></table>
-			</td>
-		</tr></table>
-	
+	<div class="gridContainer">
+<ul id="Grid">
+  <li> <img src="https://64.media.tumblr.com/706114430f8a1f4555c95d8e2d588064/ea1347c88d50b771-61/s1280x1920/3ebeff1a5a5d46eba2d47ff529858dd8b585d8ab.png" width="400" />
+</li>
+  <li>    				<img src="https://64.media.tumblr.com/7c2271b855a4a3cd4a8568b92c8ca309/c933c66f1bb4bec3-98/s1280x1920/6ab742be3a29656eef89f6f493d29f19f31ef9ca.gifv" width="400" />
+</li>
+  <li>    				<img src="https://64.media.tumblr.com/7ee549124812901d6b08f2725afad18e/23b963e59c11163a-8c/s1280x1920/3672e784be8a0d66acbf756f8e37d69b8bfb9d02.gifv" width="400" />
+</li>
+  <li>    				<img src="https://64.media.tumblr.com/3b4505d2d0f00e5698f1c9d400ba36e7/53ea8a40eaaa2e8e-0d/s1280x1920/2be9984e514c80b029a3caf72b3614744f83131a.png" width="400" />
+</li>
+  <li>    				<img src="https://64.media.tumblr.com/e99641f01e42eda353a81c1b4961e310/a9177bc63d22d3df-d2/s1280x1920/52b32ce9455dc83e56b534d46ef783b16cca84b2.png" width="400" />
+</li>
+	<li>    				<img src="https://64.media.tumblr.com/4f2743daf48bc108df8b1ae901e641b1/0e7d4fbd0a0646ea-0f/s1280x1920/b51ffc88cc3044528272e6ea90068bdbd0f97138.png" width="400" />
+</li>
+	<li>    				<img src="https://64.media.tumblr.com/3d8d861cd920296b893707398ebbd05d/a9177bc63d22d3df-49/s1280x1920/39d6c0b53963d085b8bf23907b0d963d90e1f4fe.png" width="400" />
+</li>
+	<li>    				<img src="https://64.media.tumblr.com/21e107ddddc20a99a5fc9fb11d2c92e1/e28c7317ae49b7bf-6b/s1280x1920/6be38e58f5eccfa5390d4d770cd387deb8c418dc.png" width="" height=""/>
+</li>
+	<li class="last">    				<img src="https://64.media.tumblr.com/0882aafae28a5f23d0948d0f971409d2/a9177bc63d22d3df-97/s1280x1920/6c4559d63b9bea530fe7730396cda167b30fadd3.jpg" width="400" />
+</li>
+</ul>
+		<img class="floatingLogo" src="https://64.media.tumblr.com/ce965c6b31b6c659dee8b360f16c6584/a9177bc63d22d3df-68/s1280x1920/cf654180238aa3214293fa961b20860692206b6a.png" >
 	</div>
 	
 	
 	
+	<section id="about">
+  <h2>About the Designer</h2>
+  <p>Hi there!</p>
+  <p>I'm a designer based in Dallas, Texas. I love solving creative and technical problems to make experiences better and performace higher. I have previously worked at a science museum as a designer and at a major online resale store as an email marketer/developer. I also freelance my motion design skills for short to long form videos.</p>
+		<p>I am actively looking for new full-time visual design opportunites and freelance work.</p>
+</section>
+</div>
 	
 	
-	<!------------->
-	
-	<!--FOOTER-->
-        <div id="footer" class="index">
-            <div class="left">
-                <div class="intro">
-                    <div class="title">Contact</div>
-                    <a href="mailto:eln.hrndz@gmail.com" target="_blank">eln.hrndz(at)gmail.com</a>
-                </div>
-
-                <div class="sideBlank"></div>
-
-                
-                <div class="sideBlank"></div>
-
-                <div class="position">
-                    <div class="title">Social</div>
-                    <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a><br>
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                </div>
-            </div>
-            
-            <!---<div id="copyright">© Made by Elaine Hernandez.</div>--->
-        </div>
 </body>
 </html>
