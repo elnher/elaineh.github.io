@@ -1,226 +1,151 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Portfolio</title>
-	<!--Font-->
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&display=swap');
-	  
-              /********MEDIA QUERIES// RESPONSIVE*********/
-		@media screen and (max-width:800px){
-			
-			.position{display:none;}
-			#projectRow{
-				width:100vw;
-			}
-			
-			.width640 {width: 640px !important;}
-		}
-    @media screen and (max-width:490px){
-      
-			.floatL{
-				display:flex;
-				flex-direction:row;
-				width:30%;
-			}
-      #projectRow{
-				width:490px !important;
-			}
-	    .width490 {width: 490px !important;}
-    }
-		
-	
-		
-		
-	/******/
-	html, body {
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    transition: all 200ms;
+ <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    scroll-behavior: smooth;
+       <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/footers/">
 
-    transition: all 200ms;
-    will-change: background;
-		
-	font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 1.8;
-    color: #020202;
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Portfolio</title>
+  <style>
+	@media only screen and (min-width: 490px) {
+  /* For mobile: */
+  /* ONCE SCREEN IS AT 600PX, SHOW THIS */
+    .menu{background-color:dodgerblue;}
+  .width490{width: 490px !important;}
 }
-	/**HEADER**/
-#header {
-	padding: 2% 6%; 
-    border-bottom: solid 0.2px #E5E5E5;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#header .left {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    width: 50%;
-}
-#header .position {
-    width: 30%;
-}
-
-		/**********FONTS**********/
-		b {
-    		font-weight: 400;
-		}
-
-		a {
-		text-decoration: none;
-		color: #020202;
-		}
-		
-		a:hover {
-		opacity: 30%;
-		}
-		
-		
-		
-		
-		/***ROWS OF PROJECTS****/
-		#projectRow {
-    	padding: 2% 6%;
-   		border-bottom: solid 1px #E5E5E5;
-
-
-   		display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border:1px solid beige;
-}
-		.floatL{
-			display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    width: 50%; 
-		}
-		.sideBlank{
-			width:10%;
-		}
-		
-		
-		
-		
-	/**********FOOTER**********/
-#footer {
-    margin-top: 0;
-    padding: 2% 6%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#footer.index {
-    margin-top: 0%;
-}	
-#footer .left {
-	padding: 0px; 
-
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    width: 40%;
-}
-		#media {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-
-		width: 40%;
-		}
-		
-		#copyright {padding: 0px 20px; }
-
-</style>
-</head>
-
-<body>
-	<!--HEADER-->
-        <div id="header">
-            <div class="left">
-                <div class="intro">
-                    Elaine Hernandez<br>
-                    Motion Designer and Illustrator, based in Dallas, Texas.
-                </div>
-
-                <div class="position"></a></div>
-            </div>
-			
-			
-            <div class="nav">
-                <div class="link "><a href="index.html">Work</a></div>
-                <div class="link"><a href="about.html">About</a></div>
-            </div>
-		</div><!-- \\END HEADER--->
-	
-	
-	
-	<div id="projectRow" class="width490">
-	<!---TABLE GRID---->
-	
-	<div style="boorder:1px solid red;" class="width490 width640">
-<p style="font-family: 'Familjen Grotesk', sans-serif; font-size:35px;">2023 Motion Design Reel</p>
-<div style="boorder:1px solid red;" >
-	      <!---- video vimeo ---->
-	      <iframe src="https://player.vimeo.com/video/845424488?h=2e234357a3" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-	  </div>
-	  <div style="boorder:1px solid red;"></div>
-         <p>Ready to tell your story? Browse available services, then book a free consultation. Let’s create together.</p>
-
-      
-    </div>
-
-     <!----->
-	
-    
-    <!----->
-
-    
-	</div><!----/ container--->
-	
-	
 
   
-	
-	
-	
-	<!------------->
-	
-	<!--FOOTER-->
-        <div id="footer" class="index" >
-            <div class="left" >
-                <div class="intro" >
-                    <div class="title">Contact</div>
-                    <a href="mailto:hello.elaineh@gmail.com" target="_blank">hello.elaineh(at)gmail.com</a>
-                </div>
+@media only screen and (min-width: 650px) {
+  /* For desktop: */
+/* ONCE SCREEN IS AT 768PX, SHOW THIS */
+    .menu{background-color:khaki;}
+    .width650{width: 650px !important;}
 
-                <div class="sideBlank"></div>
+}
 
-                
-                <div class="sideBlank"></div>
+.menu{width:100%;}
 
-                <div class="position">
-                    <div class="title">Social</div>
-                    <a href="https://www.linkedin.com/in/elaineher" target="_blank">LinkedIn</a><br>
-                   <!--- <a href="https://www.instagram.com/" target="_blank">Instagram</a>--->
-                </div>
-            </div>
-            
-            <div id="copyright">© Website & Images Made by Elaine.</div><div class="sideBlank"></div>
-        </div>
+/* /////\\\\\/////\\\\\////\\\\\/////
+STYLING STARTS FOR WHOLE FILE HERE
+RESPONSIVE STYLE CAN BE CHANGED ABOVE
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+*/
+
+/*
+ADDS PADDING TO NAVBAR LINKS/BUTTONS
+ALSO CHANGES FONT/WEIGHT ETC
+*/
+.navbar li{
+    padding:0 15px;
+    font-weight:800;
+  }
+  
+ </style>
+  </head>
+<body>
+
+
+<!------NAVBAR BEGINS------->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <a class="navbar-brand" href="#"><img src="https://64.media.tumblr.com/497d4b0ddb3d985b78bc8610fdd88f86/46478cfda2130d8b-b4/s1280x1920/f51169c3d7b70c128650198d556ec5f74e32fcde.png" width="60"></a>
+    <!------NAVBAR MOBILE TOGGLE------->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!----mobile toggle end, cont navbar--->
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">REEL <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">WORK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+    </ul>
+    
+    
+    <span class="navbar-text fontWeight">
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Want to work together?</a>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-dark">Let's do it!</button>
+        
+      </li>
+    </ul>
+    </span>
+  </div>
+</nav>
+<!---- NAVBAR ENDS ----->
+
+  <!---spacer--->
+<table>
+  <tr><td style="font-size:30px; line-height:30px;" height="30"></td></tr>
+  </table>
+   <!---/spacer--->
+  
+<!-----HERO [EACH MODULE WILL BE ITS OWN TABLE]----->
+<table width="650" class="width650 menuu" align="center" style="bordeer:1px solid red;" >
+  <!---for some reason only one class at a time will apply to either desktop or mobile ... alter and adjust width classes for the specific size you want, otherwise no class will default to full width.--->
+  <tr >
+    <td >
+      <h1>2023 DEMO REEEL</h1>
+      <!---- video vimeo ---->
+	     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/845424488?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="2023_demo-reel-elaine-short"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+	        
+	      </td>
+  </tr>
+  </table>
+  
+  
+<!-----HERO ENDS----->
+  
+
+  <!---spacer--->
+<table>
+  <tr><td style="font-size:30px; line-height:30px;" height="30"></td></tr>
+  </table>
+   <!---/spacer--->
+  
+  
+  
+  <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; Website & Images Made by .
+</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</div>
+  
+  
+  
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
 </body>
-</html>
